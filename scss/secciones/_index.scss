@@ -10,11 +10,12 @@
     background-size: cover;
 }
 
-.imgIndex img{
-    width: 100%;
-}
-
 .imgIndex {
     display: flex;
     justify-content: center;
+    
+    img {
+        width: 100%;
+    } 
 }
+

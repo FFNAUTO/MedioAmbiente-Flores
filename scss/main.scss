@@ -1,48 +1,64 @@
 /* ---------------- RESET -------------- */
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Bebas Neue", "cursive";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", "cursive";
+}
+
+/*-------- CSS PANTALLA CARGA ----------*/
+#contenedor_carga {
+    background-color: rgba(250, 240, 245, 0.9);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+#carga {
+    border: 15px solid #ccc;
+    border-top-color: #26f426;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    form {
+        transform: rotate(0deg);
     }
 
-    /*-------- CSS PANTALLA CARGA ----------*/
-    #contenedor_carga {
-        background-color: rgba(250, 240, 245, 0.9);
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        -webkit-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        transition: all 1s ease;
-        z-index: 10000;
-      }
-    
-      #carga {
-        border: 15px solid #ccc;
-        border-top-color: #26f426;
-        border-top-style: groove;
-        height: 100px;
-        width: 100px;
-        border-radius: 100%;
-    
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        -webkit-animation: girar 1.5s linear infinite;
-        -o-animation: girar 1.5s linear infinite;
-        animation: girar 1.5s linear infinite;
-      }
-    
-      @keyframes girar {
-        form { transform: rotate(0deg);}
-        to { transform: rotate(360deg);}
-      }
-    
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*------ TAMAÑO TITULO ---------*/
+
+
+
+.titulo {
+    font-size: 24px;
+}
+
+.subtitulo {
+    font-size: 18px
+}
 
 /*------------- IMPORT ------------*/
 @import './secciones/index';
@@ -69,39 +85,36 @@ footer {
     background-color: #188754;
     justify-content: space-evenly;
     align-items: center;
+
+    .logoFooter img {
+        width: 250px;
+    }
+
+    .informacion,
+    .informacion li {
+        display: flex;
+        text-decoration: none;
+
+    }
+
+    .informacion a,
+    .informacion ol,
+    .informacion ul {
+        text-decoration: none;
+        padding: 0px;
+        margin: 0px;
+        color: black;
+    }
+
+    .sitio,
+    .rs {
+        margin: 15px;
+    }
 }
 
-.logoFooter img {
-    width: 250px;
-}
-
-.informacion,
-.informacion li {
-    display: flex;
-    text-decoration: none;
-
-}
-
-.informacion a,
-.informacion ol,
-.informacion ul {
-    text-decoration: none;
-    padding: 0px;
-    margin: 0px;
-    color: black;
-}
-
-.sitio,
-.rs {
-    margin: 15px;
-}
 
 @media (max-width:620px) {
     footer {
         flex-direction: column;
     }
 }
-
-
-
-

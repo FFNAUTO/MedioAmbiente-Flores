@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ---------------- RESET -------------- */
 * {
   margin: 0;
@@ -5,43 +6,46 @@
   box-sizing: border-box;
   font-family: "Bebas Neue", "cursive"; }
 
-  #contenedor_carga {
-    background-color: rgba(250, 240, 245, 0.9);
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    -webkit-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-    z-index: 10000;
-  }
+/*-------- CSS PANTALLA CARGA ----------*/
+#contenedor_carga {
+  background-color: rgba(250, 240, 245, 0.9);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000; }
 
-  #carga {
-    border: 15px solid #ccc;
-    border-top-color: #26f426;
-    border-top-style: groove;
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
+#carga {
+  border: 15px solid #ccc;
+  border-top-color: #26f426;
+  border-top-style: groove;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: girar 1.5s linear infinite;
+  -o-animation: girar 1.5s linear infinite;
+  animation: girar 1.5s linear infinite; }
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    -webkit-animation: girar 1.5s linear infinite;
-    -o-animation: girar 1.5s linear infinite;
-    animation: girar 1.5s linear infinite;
-  }
+@keyframes girar {
+  form {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
-  @keyframes girar {
-    form { transform: rotate(0deg);}
-    to { transform: rotate(360deg);}
-  }
+/*------ TAMAÑO TITULO ---------*/
+.titulo {
+  font-size: 24px; }
 
-
-
+.subtitulo {
+  font-size: 18px; }
 
 /*------------- IMPORT ------------*/
 /*---------- CSS PARA INDEX ------------*/
@@ -54,12 +58,11 @@
   background-image: url(../imagenes/Banner.jpg);
   background-size: cover; }
 
-.imgIndex img {
-  width: 100%; }
-
 .imgIndex {
   display: flex;
   justify-content: center; }
+  .imgIndex img {
+    width: 100%; }
 
 /*---------- CSS PARA CRISIS ------------*/
 .banner-imageCrisis {
@@ -149,6 +152,23 @@
   background-image: url(../imagenes/sustentabilidad.jpg);
   background-size: cover; }
 
+.galeria {
+  width: 85vw;
+  height: 68vmin;
+  display: flex;
+  gap: 5px;
+  margin: 48px; }
+  .galeria img {
+    height: 100%;
+    flex: 1;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s; }
+  .galeria img:hover {
+    flex: 4; }
+
 /*--------- CSS PARA COMO AYUDAR ---------*/
 .banner-imageComoAyu {
   width: 100%;
@@ -228,11 +248,10 @@ ul {
 /* CONTACT INFO */
 .contact-info {
   background: #83BD75; }
-
-.contact-info h4, .contact-info ul, .contact-info p {
-  text-align: center;
-  margin: 0 0 1rem 0;
-  color: #fff; }
+  .contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: #fff; }
 
 /* LARGE SIZE */
 @media (min-width: 700px) {
@@ -261,26 +280,22 @@ footer {
   background-color: #188754;
   justify-content: space-evenly;
   align-items: center; }
-
-.logoFooter img {
-  width: 250px; }
-
-.informacion,
-.informacion li {
-  display: flex;
-  text-decoration: none; }
-
-.informacion a,
-.informacion ol,
-.informacion ul {
-  text-decoration: none;
-  padding: 0px;
-  margin: 0px;
-  color: black; }
-
-.sitio,
-.rs {
-  margin: 15px; }
+  footer .logoFooter img {
+    width: 250px; }
+  footer .informacion,
+  footer .informacion li {
+    display: flex;
+    text-decoration: none; }
+  footer .informacion a,
+  footer .informacion ol,
+  footer .informacion ul {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    color: black; }
+  footer .sitio,
+  footer .rs {
+    margin: 15px; }
 
 @media (max-width: 620px) {
   footer {

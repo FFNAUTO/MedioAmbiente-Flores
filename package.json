@@ -14,5 +14,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FFNAUTO/MedioAmbiente-Flores.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FFNAUTO/MedioAmbiente-Flores/issues"
+  },
+  "homepage": "https://github.com/FFNAUTO/MedioAmbiente-Flores#readme",
   "description": ""
 }
