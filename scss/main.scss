@@ -1,0 +1,73 @@
+/* ---------------- RESET -------------- */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Bebas Neue", "cursive";
+    }
+
+
+    
+
+/*------------- IMPORT ------------*/
+@import './secciones/index';
+@import './secciones/crisis';
+@import './secciones/contaminacion';
+@import './secciones/sustentabilidad';
+@import './secciones/comoAyudar';
+
+/*---------------- SEPARAR CSS ------------------*/
+.ba {
+    width: 60%;
+}
+
+.collapse a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    transition: all 0.7s;
+}
+
+/* ----------- CSS FOOTER --------- */
+
+footer {
+    display: flex;
+    background-color: #188754;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logoFooter img {
+    width: 250px;
+}
+
+.informacion,
+.informacion li {
+    display: flex;
+    text-decoration: none;
+
+}
+
+.informacion a,
+.informacion ol,
+.informacion ul {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}
+
+.sitio,
+.rs {
+    margin: 15px;
+}
+
+@media (max-width:620px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+
+
+

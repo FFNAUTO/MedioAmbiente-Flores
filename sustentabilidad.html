@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEDIO AMBIENTE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/6db48b5ca7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" href="./imagenes/hoja.png">
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./imagenes/LOGO.svg" width="200px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./index.html">¿QUE ES?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./crisis.html">CRISIS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./contaminacion.html">CONTAMINACION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">SUSTENTABILIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./comoAyudar.html">¿COMO AYUDAR?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-imageSust ">
+        <div class="content text-center">
+            <h1 class="text-white"><img class="ba" src="./imagenes/LOGO.svg" alt=""></h1>
+        </div>
+    </div>
+    <main>
+        <h1 class="titulo"> SUSTENTABILIDAD </h1>
+
+        <div class="container my-5 d-grid gap-5">
+            <div class="p-5 border">
+                Sustentabilidad: qué es, definición, concepto, principios y tipos. En la actualidad, la sustentabilidad
+                es un tema muy popular en los diálogos y acuerdos entre países y gobiernos; sin embargo, pocos conocen
+                con claridad cuál es su significado e importancia.
+                <br><br>
+                Debemos entender la sustentabilidad como “un proceso” que tiene el objetivo de encontrar el equilibrio
+                entre el medio ambiente y el uso de los recursos naturales. La humanidad en su paso por el planeta ha
+                degradado los recursos naturales de tal forma que actualmente es necesario procurar y planear
+                concienzudamente el consumo de los mismos para garantizar su existencia en las generaciones futuras.
+                <br><br>
+                La sustentabilidad tiene otros conceptos íntimamente ligados como la Responsabilidad Social y la
+                sostenibilidad para asegurar nuestro futuro. Adicionalmente, tiene a la economía circular y el valor
+                compartido para lograr impactar lo menos posible al medio ambiente.
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class=" logoFooter">
+            <a href="#"><img src="./imagenes/LOGO.svg" alt=""></a>
+        </div>
+        <div class="informacion">
+            <div class="sitio">
+                <h1>Sitio</h1>
+                <ol>
+                    <li><a href="./index.html">¿QUE ES EL MEDIO AMBIENTE?</a></li>
+                    <li><a href="./crisis.html">CRISIS</a></li>
+                    <li><a href="./contaminacion.html">CONTAMINACION</a></li>
+                    <li><a href="#">SUSTENTABILIDAD</a></li>
+                    <li><a href="./comoAyudar.html">COMO AYUDAR</a></li>
+                </ol>
+            </div>
+            <div class="rs">
+                <h1>Siguenos en:</h1>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Intagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-success', 'shadow');
+            } else {
+                nav.classList.remove('bg-success', 'shadow');
+            }
+        });
+    </script>
+</body>
+
+</html>
