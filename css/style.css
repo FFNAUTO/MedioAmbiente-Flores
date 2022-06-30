@@ -44,9 +44,6 @@
 .titulo {
   font-size: 24px; }
 
-.subtitulo {
-  font-size: 18px; }
-
 /*------------- IMPORT ------------*/
 /*---------- CSS PARA INDEX ------------*/
 .banner-imageIndex {
@@ -142,6 +139,14 @@
   background-image: url(../imagenes/contaminacion.jpg);
   background-size: cover; }
 
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: #6a6a6a;
+  margin-top: 100px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif; }
+
 /*---------- CSS PARA SUSTENTABILIDAD ----------*/
 .banner-imageSust {
   width: 100%;
@@ -168,6 +173,11 @@
     transition: all 0.3s; }
   .galeria img:hover {
     flex: 4; }
+
+.imgs {
+  align-items: center;
+  justify-content: center;
+  display: flex; }
 
 /*--------- CSS PARA COMO AYUDAR ---------*/
 .banner-imageComoAyu {
@@ -300,3 +310,5 @@ footer {
 @media (max-width: 620px) {
   footer {
     flex-direction: column; } }
+
+/* -------- VARIABLES ---------*/
